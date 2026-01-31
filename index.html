@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      @font-face {
+        font-family: "Oxanium";
+        src: url("fonts/Oxanium/Oxanium-VariableFont_wght.ttf");
+      }
+
+      body {
+        font-family: "Oxanium", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <header class="bg-dark border-bottom border-danger">
+      <nav class="navbar nav-underline navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/Group.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark m-3">
+                  <li>
+                    <a class="dropdown-item" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- SLIDER -->
+    <div class="container-fluid my-4">
+      <div class="row">
+        <aside class="col-lg-3 col-md-6 mb-4 order-lg-1 order-2">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/image1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/image3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </aside>
+        <main class="col-lg-6 col-md-6 mb-4 order-lg-2 order-1">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item bg-dark border border-danger">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-dark border border-danger text-danger"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Why Arasaka?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+              >
+                <div class="accordion-body text-danger">
+                  In a world where the streets live by violence,
+                  <strong
+                    >Arasaka creates rules that will outlast
+                    generations.</strong
+                  >
+                  Working with us, you become part of a structure whose
+                  decisions shape policy, security, and the future of the
+                  planet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-dark border border-danger">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-dark text-danger"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Our Privileges
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body text-danger">
+                  <strong>Corporate Protection</strong> <br />
+                  Your contract is your armor. Arasaka ensures the safety of
+                  employees and their immediate families.
+                  <strong>Medical & Neuro Programs</strong> <br />
+                  Priority access to advanced cybernetic implants, restorative
+                  technologies, and neuro-correction programs for occupational
+                  stress. <br />
+                  <strong>Career Vertical</strong> <br />
+                  Merit is tracked. Loyalty is rewarded. Efficiency is promoted.
+                  <br />
+                  <strong>Arasaka Housing Complexes</strong> <br />
+                  Isolated zones of enhanced comfort. Environmental control.
+                  Minimal unpredictability.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-dark border border-danger">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-dark text-danger"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Join Us
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body text-danger">
+                  <ul>
+                    <strong>Signing a contract guarantees:</strong>
+                    <li>Protection</li>
+                    <li>Status</li>
+                    <li>Access</li>
+                    <li>Responsibility</li>
+                    <strong>Arasaka does not need you.</strong>
+                    But perhaps,
+                    <strong>you need Arasaka.</strong>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container my-4 ratio ratio-16x9">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/oA-v5grpYEs?si=J2jOhlMkzMa4ASzU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>
