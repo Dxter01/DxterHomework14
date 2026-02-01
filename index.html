@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ARASAKA CORPORATION</title>
+    <link rel="icon" href="images/Arasaka+Logo,+Big+(RED) 1.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -247,10 +248,87 @@
           </div>
         </main>
         <aside class="col-lg-3 col-md-12 order-lg-3 order-3">
-          <form class="bg-dark text-danger"></form>
+          <form class="bg-dark text-danger rounded p-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Full Name of the Candidate</label
+            >
+            <input
+              class="form-control text-danger bg-dark"
+              type="text"
+              placeholder="As stated in official documents"
+              aria-label="default input example"
+            />
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Contact Neural Channel / Email</label
+              >
+              <input
+                type="email"
+                class="form-control text-danger bg-dark"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <label for="exampleFormControlInput1" class="form-label"
+              >Desired Division</label
+            >
+            <select
+              class="form-select bg-dark text-danger"
+              aria-label="Default select example"
+            >
+              <option value="1">Security</option>
+              <option value="2">R&D</option>
+              <option value="3">Netrunning</option>
+              <option value="4">Corporate Management</option>
+            </select>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Key Skills and Implants</label
+              >
+              <textarea
+                class="form-control bg-dark text-danger"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Brief Statement of Corporate Loyalty</label
+              >
+              <textarea
+                class="form-control bg-dark text-danger"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+              <button type="button" class="btn btn-danger w-100 my-2">
+                Submit the questionnaire
+              </button>
+              <button class="btn btn-outline-light w-100" type="reset">
+                Clear
+              </button>
+            </div>
+          </form>
+          <div class="text-center my-3">
+            <button
+              class="btn btn-danger"
+              onclick="
+                const m = document.getElementById('corpMusic');
+                m.paused ? m.play() : m.pause();
+                this.textContent = m.paused
+                  ? '🔇 Music is off'
+                  : '🔊 Music is on';
+              "
+            >
+              🔇 Music is off
+            </button>
+          </div>
         </aside>
       </div>
     </div>
+    <audio
+      id="corpMusic"
+      src="audio/04 - Paul Leonard-Morgan - The Streets Are Long-Ass Gutters.mp3"
+      autoplay
+      loop
+    ></audio>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
